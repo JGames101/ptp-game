@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>That's Me</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <page class="pageBlue" class="open" id="titlePage">
+            <h1 class="title wiggle">That's Me</h1>
+            <h3 class="wiggle centredText">A Game by James M</h3>
+            <p class="centredText buttonBox">
+                <button class="fancyButton" id="hostGameButton">Host Game</button>
+                <button class="fancyButton" id="joinGameButton">Join Game</button>
+            </p>
+        </page>
+        <page class="right" id="setNamePage">
+            <h1 class="title wiggle">Name</h1>
+            <h3 class="centredText">Enter your nickname:</h3>
+            <div class="idForm" id="nameForm">
+                <input id="name" placeholder="Nickname">
+                <button class="fancyButton" id="setNameButton">Begin!</button>
+            </div>
+            
+        </page>
+        <page id="hostGame" class="left">
+            <h1 class="centredText overlayTop">Your Id is <b id="idDisplay">loading...</b></h1>
+            <h1 style="margin-top:128px" class="centredText wiggle">Players</h1>
+            <div id="playerList" class="col3">
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+                <h1>Me</h1>
+            </div>
+        </page>
+        <page id="joinGame" class="right">
+            <h1 class="title wiggle">Join Game</h1>
+            <h3 class="centredText">Enter the Host's ID:</h3>
+            <div class="idForm" id="joinForm">
+                <input id="gameId" placeholder="Host ID">
+                <button class="fancyButton" id="joinFormIdButton">Play!</button>
+            </div>
+            <div id="findBox">
+
+            </div>
+        </page>
+        
+        <script src="am.min.alpha.js"></script>
+        <script src="peer.min.js"></script>
+        <script src="javascript.js"></script>
+    </body>
+</html>

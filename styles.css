@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral');
+
+@keyframes wiggle {
+    0%,100% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+}
+
+body {overflow-x:hidden;background-color:#b3e5fc;}
+
+.title {
+    font-size:72px;
+    text-align:center;
+}
+.wiggle {
+    animation:wiggle 2s infinite;
+}
+
+.centredText {
+    text-align:center;
+}
+
+.centred {
+    display:block;
+    margin:auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Spectral', serif;
+}
+
+.fancyButton {
+    background-color: #e53935;
+    border: 0px;
+    color:white;
+    font-family: 'Spectral', serif;
+    font-size:16px;
+    padding:8px;
+    border-radius:4px;
+    transition-duration:0.4s;
+    cursor:pointer;
+}
+
+page {
+    background-color:#ef9a9a;
+    position:fixed;
+    top:0px;
+    width:100%;
+    height:100%;
+    transition-duration:0.4s;
+    color:white;
+    font-family: 'Spectral', serif;
+}
+
+.pageBlue {
+    background-color:#b3e5fc;
+}
+
+.col3 {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align:center;
+}
+
+.overlayTop {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    background-color:#4dd0e1;
+    color:white;
+}
+
+.idForm {
+    text-align: center;
+}
+
+.right {
+    left:100%;
+}
+.left {
+    left:-100%;
+}
+.open {
+    left:0%;
+}
+
+.buttonBox {
+    position:absolute;
+    bottom:64px;
+    width:100%;
+}
+
+.fancyButton:hover {
+    box-shadow: 0 2px 4px -1px rgba(229, 57, 53,.2),0 4px 5px 0 rgba(229, 57, 53,.14),0 1px 10px 0 rgba(229, 57, 53,.12);
+}
