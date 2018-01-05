@@ -23,8 +23,3 @@ document.querySelector('#joinFormIdButton').addEventListener("click",function(){
     peerId = document.querySelector('#gameId').value;
     var conn = peer.connect(peerId);
 });
-
-document.querySelector('#beginButton').addEventListener("click",function(){
-    document.querySelector('#titlePage').className = 'pageBlue right';
-    document.querySelector('#setNamePage').className = 'pageBlue open';
-});
