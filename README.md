@@ -1,0 +1,3 @@
+# Peer To Peer HTML Game (WORK IN PROGRESS)
+
+WARNING: This repository is ONLY PUBLISHED FOR TESTING. It is NOT DONE.
